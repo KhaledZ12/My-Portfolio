@@ -11,7 +11,7 @@ const ExperienceSection = () => {
       description: "Leading IT infrastructure management, network administration, and system optimization. Responsible for maintaining Windows systems, troubleshooting network issues, and implementing technology solutions that enhance operational efficiency.",
       achievements: [
         "Managing enterprise network infrastructure",
-        "System administration and troubleshooting", 
+        "System administration and troubleshooting",
         "IT support and user training",
         "Network security implementation"
       ]
@@ -21,7 +21,7 @@ const ExperienceSection = () => {
       company: "Independent Contractor",
       period: "Ongoing",
       type: "Freelance",
-      description: "Developing modern web applications for clients worldwide, specializing in React.js, .NET Core, and database solutions. Delivering complete digital solutions from concept to deployment with focus on performance and user experience.",
+      description: "Developing modern web applications for clients worldwide, specializing in MERN-stack and database solutions. Delivering complete digital solutions from concept to deployment with focus on performance and user experience.",
       achievements: [
         "Built and deployed 6+ client websites",
         "Led full-stack development projects",
@@ -48,11 +48,11 @@ const ExperienceSection = () => {
             Professional journey in full-stack development and Network engineering
           </p>
         </div>
-        
+
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Professional Experience */}
           {experiences.map((experience, index) => (
-            <Card 
+            <Card
               key={experience.title}
               className="gradient-card shadow-card border-border/50 hover:shadow-hover transition-smooth animate-fade-in"
               style={{ animationDelay: `${index * 0.2}s` }}
@@ -93,7 +93,7 @@ const ExperienceSection = () => {
               </CardContent>
             </Card>
           ))}
-          
+
           {/* Education */}
           <Card className="gradient-card shadow-card border-border/50 hover:shadow-hover transition-smooth animate-fade-in">
             <CardHeader>

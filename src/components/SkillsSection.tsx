@@ -6,16 +6,16 @@ const SkillsSection = () => {
     {
       title: "Backend Development",
       icon: "⚙️",
-      skills: [".NET Core Framework", "C#", "SQL Server", "PostgreSQL", "MySQL", "API Development"]
+      skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "Redis", "RESTfull APIs"]
     },
     {
-      title: "Frontend Development", 
+      title: "Frontend Development",
       icon: "🎨",
-      skills: ["React.js", "React + Vite + Tailwind", "HTML5", "CSS3", "JavaScript", "TypeScript"]
+      skills: ["React.js", "React + Vite + Tailwind", "Next.js", "HTML5", "CSS3", "JavaScript", "TypeScript"]
     },
     {
       title: "IT & Networking",
-      icon: "🌐", 
+      icon: "🌐",
       skills: ["Network Administration", "System Troubleshooting", "Windows Systems", "CCNA/CCNP", "Infrastructure Management"]
     },
     {
@@ -46,11 +46,11 @@ const SkillsSection = () => {
             A comprehensive toolkit for modern software development and IT solutions
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {skillCategories.map((category, index) => (
-            <Card 
-              key={category.title} 
+            <Card
+              key={category.title}
               className="gradient-card shadow-card border-border/50 hover:shadow-hover transition-smooth hover:scale-105 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -63,8 +63,8 @@ const SkillsSection = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
-                    <Badge 
-                      key={skill} 
+                    <Badge
+                      key={skill}
                       variant="secondary"
                       className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-smooth"
                     >
