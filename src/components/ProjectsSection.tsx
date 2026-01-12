@@ -22,6 +22,7 @@ import nabrassMockup from '@/assets/nabrass.png';
 import lamsaMockup from '@/assets/lamsa.png';
 import manaratAlmashreqMockup from '@/assets/manaratalmashreq.png';
 import xlr8Mockup from '@/assets/xlr8.png';
+import raadMockup from '@/assets/Raad.png';
 
 const ProjectsSection = () => {
 const projects = [
@@ -53,13 +54,22 @@ const projects = [
     featured: true
   },
   {
+    title: "Raad Website",
+    description:
+      "A modern and clean portfolio website developed for Raad, focusing on strong visual presentation, smooth navigation, and responsive design across all devices.",
+    image: raadMockup,
+    technologies: ["React.js", "Supabase", "SQL"],
+    liveUrl: "https://raad-sa.com/",
+    featured: true
+  },
+  {
     title: "Lightning Marketing Solutions",
     description:
       "The official website for Lightning Marketing Solutions, a full-service digital agency. The platform highlights services, showcases projects, and delivers a strong brand presence with a modern UI/UX.",
     image: lightningMockup,
     technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
     liveUrl: "https://lightningsolutions.net",
-    featured: true
+    featured: false
   },
   {
     title: "Eureka Store",
