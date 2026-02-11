@@ -23,182 +23,192 @@ import lamsaMockup from '@/assets/lamsa.png';
 import manaratAlmashreqMockup from '@/assets/manaratalmashreq.png';
 import xlr8Mockup from '@/assets/xlr8.png';
 import raadMockup from '@/assets/Raad.png';
+import ceilingsArt from '@/assets/ceilingsart.png';
 
 const ProjectsSection = () => {
-const projects = [
-  {
-    title: "XLR8 ERP System",
-    description:
-      "A full-featured ERP system designed to streamline business operations, including inventory management, sales tracking, and user role management. Built for scalability and performance with a modern web stack.",
-    image: xlr8Mockup,
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
-    liveUrl: "https://xlr8.com/",
-    featured: true
-  },
-  {
-    title: "Breccia Store",
-    description:
-      "A complete e-commerce platform enabling customers to browse products, place orders, and manage purchases through a fast and user-friendly interface with secure backend integration.",
-    image: brecciaMockup,
-    technologies: ["React.js", "Supabase", "SQL"],
-    liveUrl: "https://breccia-eg.com/",
-    featured: true
-  },
-  {
-    title: "Pixel Portfolio",
-    description:
-      "A modern and clean portfolio website developed for Pixel, focusing on strong visual presentation, smooth navigation, and responsive design across all devices.",
-    image: pixelMockup,
-    technologies: ["React.js", "Supabase", "SQL"],
-    liveUrl: "https://pixeleg.com/",
-    featured: true
-  },
-  {
-    title: "Raad Website",
-    description:
-      "A modern and clean portfolio website developed for Raad, focusing on strong visual presentation, smooth navigation, and responsive design across all devices.",
-    image: raadMockup,
-    technologies: ["React.js", "Supabase", "SQL"],
-    liveUrl: "https://raad-sa.com/",
-    featured: true
-  },
-  {
-    title: "Lightning Marketing Solutions",
-    description:
-      "The official website for Lightning Marketing Solutions, a full-service digital agency. The platform highlights services, showcases projects, and delivers a strong brand presence with a modern UI/UX.",
-    image: lightningMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://lightningsolutions.net",
-    featured: false
-  },
-  {
-    title: "Eureka Store",
-    description:
-      "A full-stack e-commerce solution featuring user authentication, secure payments, and product management. Built with a scalable backend and a responsive frontend optimized for performance.",
-    image: eurekaStoreMockup,
-    technologies: ["React.js", "Django", "PostgreSQL"],
-    liveUrl: "https://eureka-store.vercel.app/",
-    githubUrl: "https://github.com/KhaledZ12/Eureka-Store",
-    featured: true
-  },
-  {
-    title: "Talabat Solution",
-    description:
-      "A comprehensive food delivery system inspired by Talabat, including restaurant management, order processing, and customer services with a robust backend architecture.",
-    image: talabatSolutionMockup,
-    technologies: [".NET Framework", "SQL Server", "Web API"],
-    githubUrl: "https://github.com/KhaledZ12/Talabat.solution",
-    featured: true
-  },
-  {
-    title: "Contracting Company Website",
-    description:
-      "A professional Arabic website for a construction company, showcasing services, completed projects, and company profile with a clean and responsive layout.",
-    image: contractingMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://almohtaaref.com/",
-    featured: false
-  },
-  {
-    title: "Shira Car Tashlih",
-    description:
-      "A modern service website for car scrap and used car trading, designed to clearly present services and improve customer communication.",
-    image: carServiceMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://shiracartashlih.com/",
-    featured: false
-  },
-  {
-    title: "Alshruk Tashlih",
-    description:
-      "A clean and responsive website for car dismantling and scrap services, optimized for fast loading and easy navigation.",
-    image: alshroukMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://alshuruqtashlih.com/",
-    featured: false
-  },
-  {
-    title: "Tashlih Car Shira",
-    description:
-      "A service-focused website for car dismantling businesses, built to enhance online presence and customer trust.",
-    image: tashleehMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://tashlihcarshira.com/",
-    featured: false
-  },
-  {
-    title: "Ali Shoaan Law Firm",
-    description:
-      "An elegant website for a legal consultancy firm, highlighting services, expertise, and providing clear communication channels for clients.",
-    image: lawFirmMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://alishoaan.com/",
-    featured: false
-  },
-  {
-    title: "Nawaf Almohsen Law Firm",
-    description:
-      "A professional legal services website designed to present the lawyer’s profile, practice areas, and contact information with a polished UI.",
-    image: nawafMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://nawafalmohsen.com/",
-    featured: false
-  },
-  {
-    title: "Kanan Al-Amil",
-    description:
-      "A comprehensive platform for domestic worker services, including worker profiles, service listings, and an organized booking experience.",
-    image: workerServicesMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://kanan-alamil.com/",
-    featured: false
-  },
-  {
-    title: "Nabrass",
-    description:
-      "A dedicated website for domestic worker recruitment services, focusing on clarity, trust, and responsive user experience.",
-    image: nabrassMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://nabrass.com/",
-    featured: false
-  },
-  {
-    title: "Lamsa",
-    description:
-      "A modern recruitment platform for domestic workers, designed to simplify service browsing and improve customer engagement.",
-    image: lamsaMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://ads-lamsa.com/",
-    featured: false
-  },
-  {
-    title: "Alawal",
-    description:
-      "A professional domestic worker services website built to enhance brand credibility and provide a smooth browsing experience.",
-    image: alawalMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://alawul.sa/",
-    featured: false
-  },
-  {
-    title: "Manarat Almashreq",
-    description:
-      "A responsive platform for domestic worker services, focusing on accessibility, clean design, and clear service presentation.",
-    image: manaratAlmashreqMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://manaratalmashreq.sa/",
-    featured: false
-  },
-  {
-    title: "Sheraa Tashlih",
-    description:
-      "A service-oriented website for car dismantling businesses, built with a modern UI to attract customers and improve visibility.",
-    image: sheraaTashlihMockup,
-    technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
-    liveUrl: "https://sheraa-tashlih.com/",
-    featured: false
-  }
-];
+  const projects = [
+    {
+      title: "Ceilings Art",
+      description:
+        "A professional corporate website for a suspended ceilings and acoustic solutions company, featuring a high-end project showcase and a comprehensive admin dashboard for complete control over projects, services, and blog content.",
+      image: ceilingsArt,
+      technologies: ["React.js", "Supabase", "SQL"],
+      liveUrl: "https://ceilingsart.sa/",
+      featured: true
+    },
+    {
+      title: "XLR8 ERP System",
+      description:
+        "A full-featured ERP system designed to streamline business operations, including inventory management, sales tracking, and user role management. Built for scalability and performance with a modern web stack.",
+      image: xlr8Mockup,
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
+      liveUrl: "https://xlr8.com/",
+      featured: true
+    },
+    {
+      title: "Breccia Store",
+      description:
+        "A complete e-commerce platform enabling customers to browse products, place orders, and manage purchases through a fast and user-friendly interface with secure backend integration.",
+      image: brecciaMockup,
+      technologies: ["React.js", "Supabase", "SQL"],
+      liveUrl: "https://breccia-eg.com/",
+      featured: true
+    },
+    {
+      title: "Pixel Portfolio",
+      description:
+        "A modern and clean portfolio website developed for Pixel, focusing on strong visual presentation, smooth navigation, and responsive design across all devices.",
+      image: pixelMockup,
+      technologies: ["React.js", "Supabase", "SQL"],
+      liveUrl: "https://pixelmarketng.com/",
+      featured: true
+    },
+    {
+      title: "Raad Website",
+      description:
+        "A modern and clean portfolio website developed for Raad, focusing on strong visual presentation, smooth navigation, and responsive design across all devices.",
+      image: raadMockup,
+      technologies: ["React.js", "Supabase", "SQL"],
+      liveUrl: "https://raad-sa.com/",
+      featured: true
+    },
+    {
+      title: "Lightning Marketing Solutions",
+      description:
+        "The official website for Lightning Marketing Solutions, a full-service digital agency. The platform highlights services, showcases projects, and delivers a strong brand presence with a modern UI/UX.",
+      image: lightningMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://lightningsolutions.net",
+      featured: false
+    },
+    {
+      title: "Eureka Store",
+      description:
+        "A full-stack e-commerce solution featuring user authentication, secure payments, and product management. Built with a scalable backend and a responsive frontend optimized for performance.",
+      image: eurekaStoreMockup,
+      technologies: ["React.js", "Django", "PostgreSQL"],
+      liveUrl: "https://eureka-store.vercel.app/",
+      githubUrl: "https://github.com/KhaledZ12/Eureka-Store",
+      featured: true
+    },
+    {
+      title: "Talabat Solution",
+      description:
+        "A comprehensive food delivery system inspired by Talabat, including restaurant management, order processing, and customer services with a robust backend architecture.",
+      image: talabatSolutionMockup,
+      technologies: [".NET Framework", "SQL Server", "Web API"],
+      githubUrl: "https://github.com/KhaledZ12/Talabat.solution",
+      featured: true
+    },
+    {
+      title: "Contracting Company Website",
+      description:
+        "A professional Arabic website for a construction company, showcasing services, completed projects, and company profile with a clean and responsive layout.",
+      image: contractingMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://almohtaaref.com/",
+      featured: false
+    },
+    {
+      title: "Shira Car Tashlih",
+      description:
+        "A modern service website for car scrap and used car trading, designed to clearly present services and improve customer communication.",
+      image: carServiceMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://shiracartashlih.com/",
+      featured: false
+    },
+    {
+      title: "Alshruk Tashlih",
+      description:
+        "A clean and responsive website for car dismantling and scrap services, optimized for fast loading and easy navigation.",
+      image: alshroukMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://alshuruqtashlih.com/",
+      featured: false
+    },
+    {
+      title: "Tashlih Car Shira",
+      description:
+        "A service-focused website for car dismantling businesses, built to enhance online presence and customer trust.",
+      image: tashleehMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://tashlihcarshira.com/",
+      featured: false
+    },
+    {
+      title: "Ali Shoaan Law Firm",
+      description:
+        "An elegant website for a legal consultancy firm, highlighting services, expertise, and providing clear communication channels for clients.",
+      image: lawFirmMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://alishoaan.com/",
+      featured: false
+    },
+    {
+      title: "Nawaf Almohsen Law Firm",
+      description:
+        "A professional legal services website designed to present the lawyer’s profile, practice areas, and contact information with a polished UI.",
+      image: nawafMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://nawafalmohsen.com/",
+      featured: false
+    },
+    {
+      title: "Kanan Al-Amil",
+      description:
+        "A comprehensive platform for domestic worker services, including worker profiles, service listings, and an organized booking experience.",
+      image: workerServicesMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://kanan-alamil.com/",
+      featured: false
+    },
+    {
+      title: "Nabrass",
+      description:
+        "A dedicated website for domestic worker recruitment services, focusing on clarity, trust, and responsive user experience.",
+      image: nabrassMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://nabrass.com/",
+      featured: false
+    },
+    {
+      title: "Lamsa",
+      description:
+        "A modern recruitment platform for domestic workers, designed to simplify service browsing and improve customer engagement.",
+      image: lamsaMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://ads-lamsa.com/",
+      featured: false
+    },
+    {
+      title: "Alawal",
+      description:
+        "A professional domestic worker services website built to enhance brand credibility and provide a smooth browsing experience.",
+      image: alawalMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://alawul.sa/",
+      featured: false
+    },
+    {
+      title: "Manarat Almashreq",
+      description:
+        "A responsive platform for domestic worker services, focusing on accessibility, clean design, and clear service presentation.",
+      image: manaratAlmashreqMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://manaratalmashreq.sa/",
+      featured: false
+    },
+    {
+      title: "Sheraa Tashlih",
+      description:
+        "A service-oriented website for car dismantling businesses, built with a modern UI to attract customers and improve visibility.",
+      image: sheraaTashlihMockup,
+      technologies: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+      liveUrl: "https://sheraa-tashlih.com/",
+      featured: false
+    }
+  ];
 
 
   return (
@@ -212,18 +222,18 @@ const projects = [
             A showcase of web solutions built for real businesses and clients
           </p>
         </div>
-        
+
         <div className="grid gap-8 max-w-7xl mx-auto">
           {/* Featured Projects */}
           <div className="grid md:grid-cols-2 gap-8">
             {projects.filter(project => project.featured).map((project, index) => (
-              <Card 
+              <Card
                 key={project.title}
                 className="gradient-card shadow-card border-border/50 hover:shadow-hover transition-smooth hover:scale-[1.02] animate-fade-in overflow-hidden"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="aspect-video overflow-hidden">
-                  <img 
+                  <img
                     src={project.image}
                     alt={`${project.title} screenshot`}
                     className="w-full h-full object-cover hover:scale-110 transition-smooth"
@@ -241,8 +251,8 @@ const projects = [
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech) => (
-                      <Badge 
-                        key={tech} 
+                      <Badge
+                        key={tech}
                         variant="secondary"
                         className="bg-primary/10 text-primary border-primary/20"
                       >
@@ -272,17 +282,17 @@ const projects = [
               </Card>
             ))}
           </div>
-          
+
           {/* Other Projects */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {projects.filter(project => !project.featured).map((project, index) => (
-              <Card 
+              <Card
                 key={project.title}
                 className="gradient-card shadow-card border-border/50 hover:shadow-hover transition-smooth hover:scale-105 animate-fade-in overflow-hidden"
                 style={{ animationDelay: `${(index + 2) * 0.1}s` }}
               >
                 <div className="aspect-video overflow-hidden">
-                  <img 
+                  <img
                     src={project.image}
                     alt={`${project.title} screenshot`}
                     className="w-full h-full object-cover hover:scale-110 transition-smooth"
@@ -297,8 +307,8 @@ const projects = [
                 <CardContent className="pt-0">
                   <div className="flex flex-wrap gap-1 mb-3">
                     {project.technologies.slice(0, 2).map((tech) => (
-                      <Badge 
-                        key={tech} 
+                      <Badge
+                        key={tech}
                         variant="secondary"
                         className="text-xs bg-primary/10 text-primary border-primary/20"
                       >
